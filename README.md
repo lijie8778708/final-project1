@@ -11,7 +11,7 @@
 
 ### Download Program and Execute it
 1. Open windows terminal(Cmd)
-2. copy and paste following command 
+2. Copy and paste following command 
    
    1. git clone https://github.com/lijie8778708/final-project1.git
    
@@ -21,13 +21,11 @@
    
    4. node index.js
    
-   5. Open Another Cmd
-    
-   6. repeat step 2, enter client folder this time final-project1/client
+3. Open another Cmd window and repeat step 2, enter client folder this time final-project1/client
    
-   7. npm install
+   1. npm install
    
-   8. node index.js
+   2. node index.js
 
 Both program should execute and you are able to type on client side and receive message from server side
 
