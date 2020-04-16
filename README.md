@@ -21,11 +21,13 @@
    
    4. node index.js
    
-   5. cd ../client
+   5. Open Another Cmd
+    
+   6. repeat step 2, enter client folder this time final-project1/client
    
-   6. npm install
+   7. npm install
    
-   7. node index.js
+   8. node index.js
 
 Both program should execute and you are able to type on client side and receive message from server side
 
