@@ -1,7 +1,10 @@
+// import package
 const net = require("net");
 
+// create server object
 const server = net.createServer();
 
+//  waitting for connection
 server.on("connection", (sock) => {
   console.log(
     "client connected, address - ",
@@ -21,6 +24,7 @@ server.on("connection", (sock) => {
 });
 
 server.maxConnections = 1;
+// listening on port 3333
 server.listen(3333, () => {
   console.log("server is hosting on port 3333");
 });

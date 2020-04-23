@@ -1,6 +1,8 @@
+// import nessassary package
 const net = require("net");
 const readline = require("readline");
 
+// Try to connect with server 3333
 console.log("Type exit or quit to quit ");
 let sock = net.connect({ port: 3333 }, () => {
   console.log("server connected");
@@ -8,9 +10,12 @@ let sock = net.connect({ port: 3333 }, () => {
   sock.write("Client connected");
 });
 
+// log out data once receive it from server
 sock.on("data", (data) => {
   console.log("Got data from server - ", data);
 });
+
+// log out ending information once user end the client
 sock.on("end", () => {
   console.log("client disconnected");
 });
@@ -27,6 +32,7 @@ function quitEcho() {
   sock.end();
   console.log("quit client");
 }
+// check if user type command quir or exit
 r1.on("line", (cmd) => {
   if (cmd.indexOf("quit") == 0 || cmd.indexOf("exit") == 0) {
     quitEcho();
